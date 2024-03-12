@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 // Base definition
-const base = "inline-flex";
+const base = "inline-flex rounded-full py-2 px-5 font-bold text-center items-center";
 
 
 
@@ -12,50 +12,29 @@ const button = cva(base, {
         "bg-buttonaccueil",
         "text-texttitle",
         "hover:bg-buttonaccueil/80",
-        "rounded-full",
-        "py-2",
-        "px-5",
-        "font-bold",
       ],
       false: [
         "bg-buttonfalse",
         "text-forground",
-        "hover:bg-buttonaccueil/80",
-        "rounded-full",
-        "py-2",
-        "px-5",
-        "font-bold",
+        "hover:bg-buttonfalse/80",
       ],
       true: [
         "bg-buttontrue",
         "text-forground",
-        "hover:bg-buttonaccueil/80",
-        "rounded-full",
-        "py-2",
-        "px-5",
-        "font-bold",
+        "hover:bg-buttontrue/80",
       ],
       accueilnom: [
         "bg-buttoncompte",
         "text-forground",
-        "hover:bg-buttonaccueil/80",
-        "rounded-full",
-        "py-2",
-        "px-5",
-        "font-bold",
+        "hover:bg-buttoncompte/80",
       ],
-      accueil2: [
+      submit: [
         "bg-buttoncompte2",
         "text-forground",
-        "hover:bg-buttonaccueil/80",
-        "rounded-full",
-        "py-2",
-        "px-5",
-        "font-bold",
+        "hover:bg-buttoncompte2/80",
       ],
     },
     size: {
-      categories: ["text-sm"],
       small: ["text-sm", "py-0.5", "px-1"],
       medium: ["text-base", "py-3", "px-6"],
     },
@@ -79,7 +58,7 @@ export default function Buttons() {
       <Button intent="false">Click me</Button>
       <Button intent="true">Click me</Button>
       <Button intent="accueilnom">Louise</Button>
-      <Button intent="accueil2">Ajouter un compte</Button>
+      <Button intent="submit">Ajouter un compte</Button>
     </div>
   );
 }

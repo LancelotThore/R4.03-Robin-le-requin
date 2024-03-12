@@ -1,9 +1,9 @@
+import {Buttons} from "./components/Button/Button"
+
 function App() {
 
   return (
-    <div bg-wallpaper-mobile>
-
-    </div>
+    <Buttons />
   )
 }
 

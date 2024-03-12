@@ -1,5 +1,4 @@
 import { cva } from "class-variance-authority";
-import { MenuBar } from "../../components/Menu";
 
 // Base definition
 const base = "inline-flex";
@@ -9,35 +8,51 @@ const base = "inline-flex";
 const button = cva(base, {
   variants: {
     intent: {
-      primary: [
-        "bg-green-400",
+      accueil: [
+        "bg-buttonaccueil",
+        "text-texttitle",
+        "hover:bg-buttonaccueil/80",
+        "rounded-full",
+        "py-2",
+        "px-5",
+        "font-bold",
+      ],
+      false: [
+        "bg-buttonfalse",
         "text-forground",
-        "hover:bg-green-300",
-        "rounded-md",
+        "hover:bg-buttonaccueil/80",
+        "rounded-full",
+        "py-2",
+        "px-5",
         "font-bold",
       ],
-      secondary: [
-        "bg-transparent",
-        "text-white",
-        "border-white",
-        "border-solid",
-        "border-2",
-        "hover:border-gray-300",
-        "rounded-md",
+      true: [
+        "bg-buttontrue",
+        "text-forground",
+        "hover:bg-buttonaccueil/80",
+        "rounded-full",
+        "py-2",
+        "px-5",
         "font-bold",
       ],
-      categories: [
-        "bg-transparent",
-        "text-white",
-        "border-gray-300",
-        "border-solid",
-        "border-2",
-        "rounded-md",
+      accueilnom: [
+        "bg-buttoncompte",
+        "text-forground",
+        "hover:bg-buttonaccueil/80",
+        "rounded-full",
+        "py-2",
+        "px-5",
         "font-bold",
       ],
-      MenuBar: [
-        "bg-transparent",
-      ]
+      accueil2: [
+        "bg-buttoncompte2",
+        "text-forground",
+        "hover:bg-buttonaccueil/80",
+        "rounded-full",
+        "py-2",
+        "px-5",
+        "font-bold",
+      ],
     },
     size: {
       categories: ["text-sm"],
@@ -45,9 +60,9 @@ const button = cva(base, {
       medium: ["text-base", "py-3", "px-6"],
     },
   },
-  compoundVariants: [{ intent: "primary", size: "medium", class: "uppercase" }],
+  compoundVariants: [{ intent: "accueil", size: "medium", class: "uppercase" }],
   defaultVariants: {
-    intent: "primary",
+    intent: "accueil",
     size: "medium",
     class: "uppercase",
   },
@@ -61,11 +76,10 @@ export default function Buttons() {
   return (
     <div className="grid bg-background h-screen place-content-center">
       <Button>Click me</Button>
-      <Button intent="secondary">Click me</Button>
-      <Button intent="categories" size="categories">Click me</Button>
-      <Button intent="MenuBar">
-        <MenuBar className=""></MenuBar>
-      </Button>
+      <Button intent="false">Click me</Button>
+      <Button intent="true">Click me</Button>
+      <Button intent="accueilnom">Louise</Button>
+      <Button intent="accueil2">Ajouter un compte</Button>
     </div>
   );
 }

@@ -7,6 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        forground: "hsl(var(--forground)/<alpha-value>)",
+        text: "hsl(var(--text)/<alpha-value>)",
+        texttitle: "hsl(var(--text-title)/<alpha-value>)",
+        background: "hsl(var(--background)/<alpha-value>)",
+        inputbackground: "hsl(var(--input-background)/<alpha-value>)",
+        buttonaccueil: "hsl(var(--button-accueil)/<alpha-value>)",
+        buttoncompte: "hsl(var(--button-compte)/<alpha-value>)",
+        buttoncompte2: "hsl(var(--button-compte2)/<alpha-value>)",
+        buttonfalse: "hsl(var(--button-false)/<alpha-value>)",
+        buttontrue: "hsl(var(--button-true)/<alpha-value>)",
 
       },
       backgroundImage: {

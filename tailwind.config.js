@@ -6,11 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-
-      },
       backgroundImage: {
-        'wallpaper-mobile': "url('wallpaper-mobile.png)"
+        'wallpaper-mobile': "url('./assets/wallpaper-mobile.png')",
       }
     },
   },

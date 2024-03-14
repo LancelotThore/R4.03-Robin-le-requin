@@ -1,7 +1,8 @@
 import React, { Children } from 'react';
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import Home from './routes/home.jsx';
 import Root from './routes/root.jsx';
 import ErrorPage from './ui/ErrorPage/index.jsx';
 import './index.css'
@@ -9,11 +10,9 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
-    errorElement: <ErrorPage />,
+    element: <Home />,
   }
 ]);
-
 
 const rootElement = document.querySelector('#root');
 

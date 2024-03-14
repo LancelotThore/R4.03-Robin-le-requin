@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'fredokaOne';
+    src: url(/public/fonts/FredokaOne-Regular.ttf) format('truetype');
+  }
+}
+
 :root {
   /* Primary Tokens */
 
@@ -19,5 +26,4 @@
   --text: var(--black);
   --background: var(--light-blue);
   --input-background: var(--white);
-  
 }

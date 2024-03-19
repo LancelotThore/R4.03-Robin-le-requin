@@ -2,23 +2,23 @@ import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from './routes/home.jsx';
 import Root from './routes/root.jsx';
-import ErrorPage from './ui/ErrorPage/ErrorPage.jsx';
-import './index.css'
 import Accueil from './routes/accueil.jsx';
+import ErrorPage from './ui/ErrorPage/index.jsx';
+
+import './index.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/accueil",
-    element: <Accueil />,
-    errorElement: <ErrorPage />,
+    element: <Accueil />
   }
+  
 ]);
 
 const rootElement = document.querySelector('#root');

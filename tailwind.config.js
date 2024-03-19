@@ -11,6 +11,7 @@ export default {
         text: "hsl(var(--text)/<alpha-value>)",
         texttitle: "hsl(var(--text-title)/<alpha-value>)",
         background: "hsl(var(--background)/<alpha-value>)",
+        backgroundshark: "hsl(var(--bg-shark)/<alpha-value>)",
         inputbackground: "hsl(var(--input-background)/<alpha-value>)",
         buttonaccueil: "hsl(var(--button-accueil)/<alpha-value>)",
         buttoncompte: "hsl(var(--button-compte)/<alpha-value>)",

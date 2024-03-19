@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 // Base definition
-const base = "inline-flex rounded-full py-2 px-5 font-bold text-center items-center";
+const base = "inline-flex rounded-full py-2 px-5 font-bold text-center items-center min-w-full";
 
 
 
@@ -47,18 +47,6 @@ const button = cva(base, {
   },
 });
 
-function Button({ intent, size, className, ...rest }) {
+export default function Button({ intent, size, className, ...rest }) {
   return <button {...rest} className={button({ intent, size, className })} />;
-}
-
-export default function Buttons() {
-  return (
-    <div className="grid bg-background h-screen place-content-center">
-      <Button>Click me</Button>
-      <Button intent="false">Click me</Button>
-      <Button intent="true">Click me</Button>
-      <Button intent="accueilnom">Louise</Button>
-      <Button intent="submit">Ajouter un compte</Button>
-    </div>
-  );
 }

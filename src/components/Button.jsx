@@ -49,15 +49,3 @@ const button = cva(base, {
 export default function Button({ intent, size, className, ...rest }) {
   return <button {...rest} className={button({ intent, size, className })} />;
 }
-
-function Buttons() {
-  return (
-    <div className="grid bg-background h-screen place-content-center">
-      <Button>Click me</Button>
-      <Button intent="false">Click me</Button>
-      <Button intent="true">Click me</Button>
-      <Button intent="accueilnom">Louise</Button>
-      <Button intent="submit">Ajouter un compte</Button>
-    </div>
-  );
-}

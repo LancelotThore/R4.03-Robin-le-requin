@@ -1,11 +1,11 @@
 import  Buttons  from "./components/Button/Button"
 import Accueil from "./ui/Accueil/Accueil"
-import Type from "./components/Button/Type"
+import Preambule from "./ui/Preambule/Preambule";
 
 function App() {
 
   return (
-    <Type></Type>
+    <Preambule/>
   )
 }
 

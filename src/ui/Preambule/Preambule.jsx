@@ -10,7 +10,7 @@ import Robin from '../../components/Button/Robin';
 export default function Preambule() {
     return (
         <>
-            <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
+            <div className=" pb-5 flex items-center justify-center flex-col gap-5">
                 <Compte className="absolute right-0 top-0 m-5 w-16" />
                 <Robin/>
                 <Perso/>

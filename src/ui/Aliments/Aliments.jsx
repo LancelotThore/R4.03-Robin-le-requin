@@ -9,7 +9,7 @@ import Robin from '../../components/Button/Robin';
 export default function Aliments() {
     return (
         <>
-            <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
+            <div className=" pb-5 flex items-center justify-center flex-col gap-8">
                 <Retour className="absolute left-0 top-0 mt-7 ml-7" />
                 <Robin />
                 <div className="flex items-center gap-5">

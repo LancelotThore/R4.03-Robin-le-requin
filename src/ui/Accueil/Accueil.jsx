@@ -5,7 +5,7 @@ import Robin from "../../components/Button/Robin";
 export default function Accueil() {
     return (
         <>
-            <div className="bg-background h-screen ">
+            <div className=" h-screen ">
                 <img className="absolute right-0 top-0 m-5 w-16" src="/img/MTDents.svg"></img>
                 <Robin/>
                 <h2 className="text-texttitle text-center pt-10">Bienvenue sur ton application préférée <br></br>

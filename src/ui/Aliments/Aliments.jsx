@@ -12,7 +12,7 @@ export default function Aliments() {
             <div className=" pb-5 flex items-center justify-center flex-col gap-8">
                 <Retour className="absolute left-0 top-0 mt-7 ml-7" />
                 <Robin />
-                <div className="flex items-center gap-5">
+                <div className="flex flex-col items-center sm:flex-row gap-5">
                     <Perso />
                     <h2 className="text-texttitle text-3xl font-bold">Les aliments à éviter</h2>
                 </div>

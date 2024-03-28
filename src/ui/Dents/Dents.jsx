@@ -9,7 +9,7 @@ export default function Dents() {
     return (
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
-                <Retour className="absolute left-0 top-0 m-5 w-16" />
+               <Link to=""> <Retour className="absolute left-0 top-0 m-5 w-16" /></Link>
                 <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
                 <div className="flex items-center gap-5">
                     <Perso />
@@ -22,13 +22,13 @@ export default function Dents() {
                     <div className="mt-5 flex gap-5 flex-col items-center">
 
                         <TypeDents Icon={Dent} />
-                        <h2>Etape 1</h2>
+                        <h2 className="font-semibold">Etape 1</h2>
                         <h2>Dents de lait</h2>
                         <TypeDents />
-                        <h2>Etape 2</h2>
-                        <h2>Perte de ses dents de lait</h2>
+                        <h2 className="font-semibold">Etape 2</h2>
+                        <h2 >Perte de ses dents de lait</h2>
                         <TypeDents Icon={Dent} />
-                        <h2>Etape 3</h2>
+                        <h2 className="font-semibold">Etape 3</h2>
                         <h2>Pousse des dents définitives</h2>
 
                     </div>

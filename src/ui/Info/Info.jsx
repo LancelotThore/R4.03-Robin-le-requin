@@ -10,7 +10,7 @@ export default function Info() {
     return (
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
-                <Retour className="absolute left-0 top-0 m-5 w-16" />
+            <Link to=""> <Retour className="absolute left-0 top-0 m-5 w-16" /></Link>
                 <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
                 <Perso/>
             </div>
@@ -19,7 +19,7 @@ export default function Info() {
                 <Type text="Les aliments à éviter" Icon={Candy}/>
                 <Type text="Les dents de lait" Icon={Dent}/>
                 <Type text="La recette du jour" Icon={Couverts}/>
-            </div>
+            </div> 
         </>
     )
 }

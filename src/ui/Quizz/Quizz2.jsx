@@ -8,17 +8,17 @@ import { useState } from 'react';
 
 
 
-export default function Quizz() {
+export default function Quizz2() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);
     const [answerSelected, setAnswerSelected] = useState(false);
 
     const answers = [
-        { text: 'Les dents définitives', isCorrect: false },
-        { text: 'Les dents de lait', isCorrect: false },
-        { text: 'Les deux types de dents', isCorrect: true },
-        { text: 'Aucune', isCorrect: false },
+        { text: 'Pour que les dents deviennent plus jaunes.', isCorrect: false },
+        { text: 'Pour rendre les dents plus molles et faciles à casser.', isCorrect: false },
+        { text: 'Pour obtenir des super pouvoirs comme voler!', isCorrect: false },
+        { text: 'Pour garder nos dents et nos gencives en bonne santé.', isCorrect: true },
     ];
 
     const handleAnswerClick = (answer) => {
@@ -41,8 +41,8 @@ export default function Quizz() {
             <Compte className="absolute right-0 top-0 mt-7 ml-7" />
             <Robin />
             <Perso />
-            <h2 className="text-texttitle text-3xl font-bold ">Question 1</h2>
-            <h2 className="text-texttitle text-2xl font-semibold ">Les carries peuvent se développer sur : </h2>
+            <h2 className="text-texttitle text-3xl font-bold">Question 2</h2>
+            <h2 className="text-texttitle text-2xl font-semibold text-center">Pourquoi pensez-vous qu'il est important de se<br></br> brosser les dents régulièrement?</h2>
             <div className="flex flex-col mt-5 mb-5 w-2/3 max-w-98 gap-5">
                 {answers.map((answer, index) => (
                     <Button
@@ -54,7 +54,6 @@ export default function Quizz() {
                         {answer.text}
                     </Button>
                 ))}
-                <Button intent="submit">Question suivante</Button>
             </div>
             {correctAnswer && <p>La bonne réponse était : {correctAnswer}</p>}
         </div>

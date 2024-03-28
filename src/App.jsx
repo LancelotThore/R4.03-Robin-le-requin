@@ -7,6 +7,7 @@ import Recette from "./ui/Recette/Recette";
 import Aliments from "./ui/Aliments/Aliments";
 import Dents from "./ui/Dents/Dents";
 import Quizz from "./ui/Quizz/Quizz";
+import Quizz2 from "./ui/Quizz/Quizz2";
 
 function App() {
 

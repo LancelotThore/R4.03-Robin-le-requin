@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour } from "../../components/Button/Icons";
 import { Perso, Perso2 } from "../../components/Button/Perso";
-import { Type2, TypeDents } from '../../components/Button/Type';
+import { TypeDents } from '../../components/Button/Type';
 
 
 export default function Dents() {

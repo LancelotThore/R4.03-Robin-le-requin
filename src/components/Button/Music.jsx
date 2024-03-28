@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Play, Stop } from './Icons';
 
 function MusicPlayer() {
   const audioRef = useRef(); // Crée une référence pour l'élément audio
@@ -21,7 +22,23 @@ function MusicPlayer() {
         Pause
       </button>
     </div>
-  );
+  )
 }
 
-export default MusicPlayer;
+function BtnPlay() {
+  return (
+    <div className="rounded-full p-3 border-solid border-4 border-texttitle">
+      <Play/>
+    </div>
+  )
+}
+
+function BtnStop() {
+  return (
+    <div className="rounded-full p-3 border-solid border-4 border-texttitle">
+      <Stop/>
+    </div>
+  )
+}
+
+export {MusicPlayer, BtnPlay, BtnStop};

@@ -5,6 +5,7 @@ import { Perso, Perso2 } from "../../components/Button/Perso";
 import { TypeDents } from '../../components/Button/Type';
 import { Input } from '../../components/Button/input';
 import Robin from '../../components/Button/Robin';
+import { BtnPlay, BtnStop } from '../../components/Button/Music';
 
 
 export default function Dents() {

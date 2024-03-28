@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Type, Type2 } from "../../components/Button/Type"
 import { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit,Compte, Requin6ans, Requin9ans } from "../../components/Button/Icons";
 import {Perso, Perso2} from "../../components/Button/Perso";
+import Robin from '../../components/Button/Robin';
 
 
 export default function Preambule() {
@@ -11,7 +12,7 @@ export default function Preambule() {
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
                 <Compte className="absolute right-0 top-0 m-5 w-16" />
-                <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
+                <Robin/>
                 <Perso/>
             </div>
             <div className="flex items-center flex-col mt-5 mb-5 gap-5">

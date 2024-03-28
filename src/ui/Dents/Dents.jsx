@@ -4,16 +4,17 @@ import { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRempli
 import { Perso, Perso2 } from "../../components/Button/Perso";
 import { TypeDents } from '../../components/Button/Type';
 import { Input } from '../../components/Button/input';
+import Robin from '../../components/Button/Robin';
 
 
 export default function Dents() {
     return (
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
                <Retour className="absolute left-0 top-0 mt-7 ml-7" />
-                <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
+                <Robin/>
                 <div className="flex items-center gap-5">
                     <Perso />
-                    <h2 className="text-texttitle text-3xl font-bold">Les dents de lait</h2>
+                    <h2 className="text-texttitle text-3xl font-bold ">Les dents de lait</h2>
                 </div>
                 <div className="flex bg-forground flex-col mt-5 mb-5 drop-shadow-md w-2/3 max-w-98 p-5 rounded-md gap-5">
                     <h2 className="font-bold text-3xl">Pourquoi on perd ses dents de lait ?</h2>
@@ -30,7 +31,6 @@ export default function Dents() {
                         <TypeDents Icon={Dent} />
                         <h2 className="font-semibold">Etape 3</h2>
                         <h2>Pousse des dents définitives</h2>
-                        <Input text="Prénom"/>
                     </div>
                 </div>
             </div>

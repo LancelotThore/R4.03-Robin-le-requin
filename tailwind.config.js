@@ -24,8 +24,8 @@ export default {
         'wallpaper-mobile': "url('wallpaper-mobile.png)"
       },
       fontFamily: {
-        customFont: ['"Custom Font"', "sans-serif"],
-        // Add more custom font families as needed
+        Fredoka: ["Fredoka", "sans-serif"],
+        Gochi: ["Gochi Hand", "cursive"]
       },
     },
   },

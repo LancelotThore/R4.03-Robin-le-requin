@@ -1,12 +1,13 @@
 import Button from "../../components/Button/Button";
 import { Requin3ans } from "../../components/Button/Icons";
+import Robin from "../../components/Button/Robin";
 
 export default function Accueil() {
     return (
         <>
             <div className="bg-background h-screen ">
                 <img className="absolute right-0 top-0 m-5 w-16" src="/img/MTDents.svg"></img>
-                <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
+                <Robin/>
                 <h2 className="text-texttitle text-center pt-10">Bienvenue sur ton application préférée <br></br>
                     pour prendre soin de tes dents !</h2>
                 <div className="w-2/3 max-w-xs mx-auto rounded-full bg-backgroundshark aspect-square flex justify-center items-center mt-20">

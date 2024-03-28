@@ -12,6 +12,7 @@ export default function Quizz() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);
+    const [answerSelected, setAnswerSelected] = useState(false);
 
     const answers = [
         { text: 'Les dents définitives', isCorrect: false },
@@ -21,14 +22,17 @@ export default function Quizz() {
     ];
 
     const handleAnswerClick = (answer) => {
-        setSelectedAnswer(answer.text);
-        setIsCorrect(answer.isCorrect);
-        if (!answer.isCorrect) {
-            const correct = answers.find(a => a.isCorrect);
-            setCorrectAnswer(correct.text);
-            correct.intent = 'true';
-        } else {
-            setCorrectAnswer(null);
+        if (!answerSelected) {
+            setSelectedAnswer(answer.text);
+            setIsCorrect(answer.isCorrect);
+            setAnswerSelected(true);
+            if (!answer.isCorrect) {
+                const correct = answers.find(a => a.isCorrect);
+                setCorrectAnswer(correct.text);
+                correct.intent = 'true';
+            } else {
+                setCorrectAnswer(null);
+            }
         }
     };
 
@@ -45,6 +49,7 @@ export default function Quizz() {
                         key={index}
                         intent={selectedAnswer === answer.text ? (isCorrect ? 'true' : 'false') : (answer.text === correctAnswer ? 'true' : 'accueilnom')}
                         onClick={() => handleAnswerClick(answer)}
+                        disabled={answerSelected}
                     >
                         {answer.text}
                     </Button>

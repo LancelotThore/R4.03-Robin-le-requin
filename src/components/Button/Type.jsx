@@ -21,11 +21,11 @@ function Type2({ text, Icon }) {
     )
 }
 
-function TypeDents({ Icon }) {
+function TypeDents({ Icon = () => <div></div> }) {
     return (
-            <div className="flex rounded-full items-center justify-center w-10 h-10 border-solid border-2 border-texttitle">
-                <Icon/>
-            </div>
+        <div className="flex rounded-full items-center justify-center w-24 h-24 border-solid border-4 p-2 border-texttitle">
+            <Icon/>
+        </div>
     )
 }
 

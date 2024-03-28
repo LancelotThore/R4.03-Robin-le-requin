@@ -23,13 +23,13 @@ export default function Dents() {
 
                         <TypeDents Icon={Dent} />
                         <h2>Etape 1</h2>
-                        <h2></h2>
+                        <h2>Dents de lait</h2>
                         <TypeDents />
                         <h2>Etape 2</h2>
-                        <h2></h2>
+                        <h2>Perte de ses dents de lait</h2>
                         <TypeDents Icon={Dent} />
                         <h2>Etape 3</h2>
-                        <h2></h2>
+                        <h2>Pousse des dents définitives</h2>
 
                     </div>
                 </div>

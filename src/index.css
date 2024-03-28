@@ -12,18 +12,31 @@
 :root {
   /* Primary Tokens */
 
-  --green: #99fba8;
-  --red: #fb9999;
-  --light-blue: #bbe5fe;
-  --blue: #74b0ec;
-  --dark-blue: #096ebb;
-  --black: #000000;
-  --white: #ffffff;
-  --orange: #ffbf08;
-  --secondary-blue: #97cbf5;
+  --green: 129 92% 79%;
+  --red: 0 92% 79%;
+  --light-blue: 202 97% 86%;
+  --blue: 210 76% 69%;
+  --dark-blue: 206 91% 38%;
+  --black: 0 0% 0%;
+  --white: 0 0% 100%;
+  --orange: 44 100% 52%;
+  --secondary-blue: 207 82% 78%;
 
-  /*  */
+  /* Semantic Tokens  */
   --text: var(--black);
+  --forground: var(--white);
+  --text-title: var(--dark-blue);
   --background: var(--light-blue);
   --input-background: var(--white);
+  --button-accueil: var(--white);
+  --button-compte: var(--dark-blue);
+  --button-compte2: var(--orange);
+  --button-false: var(--red);  
+  --button-true: var(--green);
+  --bg-shark: var(--blue);
+}
+
+.myProgressBar .CircularProgressbar-path,
+.myProgressBar .CircularProgressbar-trail {
+    stroke-width: 2 !important;
 }

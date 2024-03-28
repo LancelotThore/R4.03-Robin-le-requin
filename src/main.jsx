@@ -7,6 +7,11 @@ import Accueil from './routes/accueil.jsx';
 import ErrorPage from './ui/ErrorPage/index.jsx';
 
 import './index.css';
+import CreationCompte from './routes/creationcompte.jsx';
+import Caries from './routes/caries.jsx';
+import Preambule from './routes/preambule.jsx';
+import Dents from './routes/dents.jsx';
+import Info from './routes/info.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +22,27 @@ const router = createBrowserRouter([
   {
     path: "/accueil",
     element: <Accueil />
-  }
-  
+  },
+  {
+    path: "/ajoutercompte",
+    element: <CreationCompte />
+  },
+  {
+    path: "/caries",
+    element: <Caries />
+  },
+  {
+    path: "/preambule",
+    element: <Preambule />
+  },
+  {
+    path: "/dents",
+    element: <Dents />
+  },
+  {
+    path: "/info",
+    element: <Info />
+  },
 ]);
 
 const rootElement = document.querySelector('#root');

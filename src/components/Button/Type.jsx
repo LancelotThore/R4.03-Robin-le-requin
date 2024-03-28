@@ -1,12 +1,11 @@
-import { Dent } from "../../components/Button/Icons";
 
 function Type({ text, Icon }) {
     return (
-        <div className="rounded-lg bg-forground w-32 h-32 flex flex-col items-center justify-center drop-shadow-md gap-3">
+        <div className="rounded-lg bg-forground w-64 h-64 flex flex-col items-center justify-center drop-shadow-md gap-3">
             <div className="flex rounded-full items-center justify-center w-14 h-14 bg-background">
             <Icon/>
             </div>
-            <h2 className="text-text">{text}</h2>
+            <h2 className="text-text text-center">{text}</h2>
         </div>
     )
 }
@@ -22,4 +21,12 @@ function Type2({ text, Icon }) {
     )
 }
 
-export {Type, Type2}
+function TypeDents({ Icon }) {
+    return (
+            <div className="flex rounded-full items-center justify-center w-10 h-10 border-solid border-2 border-texttitle">
+                <Icon/>
+            </div>
+    )
+}
+
+export {Type, Type2, TypeDents}

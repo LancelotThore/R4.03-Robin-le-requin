@@ -647,6 +647,24 @@ function Requin9ans(props) {
     );
 }
 
+function Retour(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="19"
+      height="33"
+      fill="none"
+      viewBox="0 0 19 33"
+      {...props}
+    >
+      <path
+        fill="#fff"
+        d="M18.9 4.75L7.15 16.5 18.9 28.25l-2.35 4.7L.1 16.5 16.55.05l2.35 4.7z"
+      ></path>
+    </svg>
+  );
+}
 
 
-export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans  }
+
+export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour  }

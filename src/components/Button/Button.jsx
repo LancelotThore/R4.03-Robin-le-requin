@@ -17,16 +17,19 @@ const button = cva(base, {
         "bg-buttonfalse",
         "text-forground",
         "hover:bg-buttonfalse/80",
+        "justify-center"
       ],
       true: [
         "bg-buttontrue",
         "text-forground",
         "hover:bg-buttontrue/80",
+        "justify-center"
       ],
       accueilnom: [
         "bg-buttoncompte",
         "text-forground",
         "hover:bg-buttoncompte/80",
+        "justify-center"
       ],
       submit: [
         "bg-buttoncompte2",

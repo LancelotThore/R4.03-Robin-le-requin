@@ -6,11 +6,12 @@ import Caries from "./ui/Caries/Caries";
 import Recette from "./ui/Recette/Recette";
 import Aliments from "./ui/Aliments/Aliments";
 import Dents from "./ui/Dents/Dents";
+import Quizz from "./ui/Quizz/Quizz";
 
 function App() {
 
   return (
-    <Dents/>
+    <Quizz/>
   )
 }
 

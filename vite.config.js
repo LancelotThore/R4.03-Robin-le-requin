@@ -1,8 +1,10 @@
-// vite.config.js
-export default {
-  // config options
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
   build: {
     target: 'esnext'
   },
-  base: '~duthil3/robin-le-requin/'
-}
+  base: '/~thore2/robin-le-requin/',
+  plugins: [react()],
+})

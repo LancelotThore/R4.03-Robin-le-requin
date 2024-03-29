@@ -1,6 +1,6 @@
 import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import Accueil from './routes/accueil.jsx';
@@ -20,52 +20,52 @@ import Chrono from './routes/chrono.jsx';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: `/~thore2/robin-le-requin/`,
     element: <Root />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/accueil",
+    path: "/~thore2/robin-le-requin/accueil",
     element: <Accueil />
   },
   {
-    path: "/ajoutercompte",
+    path: "/~thore2/robin-le-requin/ajoutercompte",
     element: <CreationCompte />
   },
   {
-    path: "/caries",
+    path: "/~thore2/robin-le-requin/caries",
     element: <Caries />
   },
   {
-    path: "/preambule",
+    path: "/~thore2/robin-le-requin/preambule",
     element: <Preambule />
   },
   {
-    path: "/dents",
+    path: "/~thore2/robin-le-requin/dents",
     element: <Dents />
   },
   {
-    path: "/info",
+    path: "/~thore2/robin-le-requin/info",
     element: <Info />
   },
   {
-    path: "/quizz",
+    path: "/~thore2/robin-le-requin/quizz",
     element: <Quizz />
   },
   {
-    path: "/quizz2",
+    path: "/~thore2/robin-le-requin/quizz2",
     element: <Quizz2 />
   },
   {
-    path: "/aliments",
+    path: "/~thore2/robin-le-requin/aliments",
     element: <Aliments />
   },
   {
-    path: "/recette",
+    path: "/~thore2/robin-le-requin/recette",
     element: <Recette />
   },
   {
-    path: "/chrono",
+    path: "/~thore2/robin-le-requin/chrono",
     element: <Chrono />
   },
 ]);

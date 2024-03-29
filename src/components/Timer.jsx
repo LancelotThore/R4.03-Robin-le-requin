@@ -47,7 +47,7 @@ export default function Timer() {
                 <BtnPlay onClick={() => setIsRunning(true)} isPlaying={isRunning} />
                 <BtnStop onClick={() => setIsRunning(false)} />
             </div>
-            <audio ref={audioRef} src="/audio/MusicTimer.mp3" preload="auto" />
+            <audio ref={audioRef} src="/~thore2/robin-le-requin/audio/MusicTimer.mp3" preload="auto" />
         </>
     );
 }

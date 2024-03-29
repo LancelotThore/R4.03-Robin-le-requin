@@ -29,9 +29,9 @@ export default function Accueil() {
                 <Perso />
                 <div className="flex items-center flex-col w-screen gap-4">
                     {users.map((user, index) => (
-                        <Link to="/preambule"><Button key={index} intent="accueilnom" onClick={() => handleUserSelect(user)}>{user.prenom}</Button></Link>
+                        <Link to="/~thore2/robin-le-requin/preambule"><Button key={index} intent="accueilnom" onClick={() => handleUserSelect(user)}>{user.prenom}</Button></Link>
                     ))}
-                    <Link to="/ajoutercompte"><Button intent="submit">Ajouter un compte</Button></Link>
+                    <Link to="/~thore2/robin-le-requin/ajoutercompte"><Button intent="submit">Ajouter un compte</Button></Link>
                 </div>
             </div>
         </>

@@ -9,13 +9,13 @@ export default function Recette() {
     return (
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
-                <Link to="/info"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
+                <Link to="/~thore2/robin-le-requin/info"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
                 <Robin />
                 <div className="flex flex-col items-center sm:flex-row gap-5">
                     <Perso2 />
                     <h2 className="text-texttitle text-3xl font-bold">La recette du jour</h2>
                 </div>
-                <div className="flex bg-forground flex-col mt-5 mb-5 drop-shadow-md w-2/3 max-w-98 p-5 rounded-md gap-5 items-baseline gap-8">
+                <div className="flex bg-forground flex-col mt-5 mb-5 drop-shadow-md w-2/3 max-w-98 p-5 rounded-md items-baseline gap-8">
                     <h2 className="font-bold text-2xl text-center">L'omelette tendresse</h2>
                     <div className='flex flex-col gap-3'>
                         <h2 className="font-bold text-lg">Les ingrédients</h2>

@@ -9,16 +9,18 @@ import Robin from '../components/Robin';
 export default function Preambule() {
     return (
         <>
-            <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
-                <Link to="/accueil"><Compte className="absolute right-0 top-0 m-5 w-16" /></Link>
-                <Robin />
-                <Perso />
-            </div>
-            <div className="flex items-center flex-col mt-5 mb-5 gap-5">
-                <Type2 text="Mon calendrier de suivi" extraClasses="w-72" Icon={Calendar}/>
-                <Link to="/chrono"><Type2 text="Mon Chronomètre" extraClasses="w-72" Icon={Chrono}/></Link>
-                <Link to="/info"><Type2 text="Prendre soin de mes dents" extraClasses="w-72" Icon={Sante}/></Link>
-                <Link to="/quizz"><Type2 text="Le quizz des dents" extraClasses="w-72" Icon={DentsRemplie}/></Link>
+            <div className="h-screen flex flex-col">
+                <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
+                    <Link to="/~thore2/robin-le-requin/accueil"><Compte className="absolute right-0 top-0 m-5 w-16" /></Link>
+                    <Robin />
+                    <Perso />
+                </div>
+                <div className="flex items-center justify-evenly flex-col mt-5 mb-5 gap-5 h-full pb-8">
+                    <Type2 text="Mon calendrier de suivi" extraClasses="w-72" Icon={Calendar} />
+                    <Link to="/~thore2/robin-le-requin/chrono"><Type2 text="Mon Chronomètre" extraClasses="w-72" Icon={Chrono} /></Link>
+                    <Link to="/~thore2/robin-le-requin/info"><Type2 text="Prendre soin de mes dents" extraClasses="w-72" Icon={Sante} /></Link>
+                    <Link to="/~thore2/robin-le-requin/quizz"><Type2 text="Le quizz des dents" extraClasses="w-72" Icon={DentsRemplie} /></Link>
+                </div>
             </div>
         </>
     )

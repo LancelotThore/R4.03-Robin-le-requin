@@ -743,4 +743,60 @@ function Play2(props) {
     );
 }
 
-export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, MTDents, Stop, Play, Play2 }
+function WallpaperMobile(props) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 375 812"
+            {...props}
+        >
+            <g clipPath="url(#clip0_6310_2609)">
+                <path fill="url(#paint0_linear_6310_2609)" d="M0 0H375V812H0z"></path>
+                <path
+                    fill="#fff"
+                    fillOpacity="0.2"
+                    d="M221.056 -64.629H248.876V668.1659999999999H221.056z"
+                    transform="rotate(-14.3 221.056 -64.629)"
+                ></path>
+                <path
+                    fill="#fff"
+                    fillOpacity="0.2"
+                    d="M79.363 -32.353H142.109V858.9490000000001H79.363z"
+                    transform="rotate(-11.129 79.363 -32.353)"
+                ></path>
+                <path
+                    fill="#fff"
+                    fillOpacity="0.2"
+                    d="M-49 -18.117H-11.921V874.3240000000001H-49z"
+                    transform="rotate(-11.242 -49 -18.117)"
+                ></path>
+                <path
+                    fill="#fff"
+                    fillOpacity="0.2"
+                    d="M-39.575 427.964H-3.8640000000000043V889.723H-39.575z"
+                    transform="rotate(-11.242 -39.575 427.964)"
+                ></path>
+            </g>
+            <defs>
+                <linearGradient
+                    id="paint0_linear_6310_2609"
+                    x1="0"
+                    x2="178.139"
+                    y1="0"
+                    y2="853.107"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#BBE5FE"></stop>
+                    <stop offset="0.64" stopColor="#74B0EC"></stop>
+                    <stop offset="1" stopColor="#096EBB"></stop>
+                </linearGradient>
+                <clipPath id="clip0_6310_2609">
+                    <path fill="#fff" d="M0 0H375V812H0z"></path>
+                </clipPath>
+            </defs>
+        </svg>
+    );
+}
+
+export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, MTDents, Stop, Play, Play2, WallpaperMobile }

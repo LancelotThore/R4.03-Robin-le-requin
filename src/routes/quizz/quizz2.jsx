@@ -35,8 +35,8 @@ export default function Quizz2() {
 
     return (
         <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
-            <Link to="/preambule"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
-            <Link to="/accueil"><Compte className="absolute right-0 top-0 m-5 w-16" /></Link>
+            <Link to="/~thore2/robin-le-requin/preambule"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
+            <Link to="/~thore2/robin-le-requin/accueil"><Compte className="absolute right-0 top-0 m-5 w-16" /></Link>
             <Robin />
             <Perso />
             <h2 className="text-texttitle text-3xl font-bold">Question 2</h2>

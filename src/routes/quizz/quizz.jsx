@@ -6,6 +6,7 @@ import Robin from '../../components/Robin';
 import { Perso } from '../../components/Perso';
 
 export default function Quizz() {
+    sessionStorage.removeItem('score');
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);

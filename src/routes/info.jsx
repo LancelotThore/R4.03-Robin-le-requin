@@ -10,15 +10,15 @@ export default function Info() {
     return (
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
-            <Retour className="absolute left-0 top-0 mt-7 ml-7" />
+                <Link to="/preambule"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
                 <Robin/>
                 <Perso2/>
             </div>
             <div className="flex items-center flex-col mt-5 mb-5 gap-5">
-                <Type text="Les caries" Icon={Dent}/>
-                <Type text="Les aliments à éviter" Icon={Candy}/>
-                <Type text="Les dents de lait" Icon={Dent}/>
-                <Type text="La recette du jour" Icon={Couverts}/>
+                <Link to="/caries"><Type text="Les caries" Icon={Dent}/></Link>
+                <Link to="/aliments"><Type text="Les aliments à éviter" Icon={Candy}/></Link>
+                <Link to="/dents"><Type text="Les dents de lait" Icon={Dent}/></Link>
+                <Link to="/recette"><Type text="La recette du jour" Icon={Couverts}/></Link>
             </div> 
         </>
     )

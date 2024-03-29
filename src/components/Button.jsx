@@ -1,14 +1,13 @@
 import { cva } from "class-variance-authority";
 
 // Base definition
-const base = "inline-flex rounded-full py-2 px-5 font-bold text-center items-center";
-
+const base = "inline-flex rounded-full py-2 px-5 font-bold text-center items-center min-w-full";
 
 const button = cva(base, {
   variants: {
     intent: {
       accueil: [
-        "bg-white",
+        "bg-buttonaccueil",
         "text-texttitle",
         "hover:bg-buttonaccueil/80",
       ],
@@ -16,21 +15,25 @@ const button = cva(base, {
         "bg-buttonfalse",
         "text-forground",
         "hover:bg-buttonfalse/80",
+        "justify-center"
       ],
       true: [
         "bg-buttontrue",
         "text-forground",
         "hover:bg-buttontrue/80",
+        "justify-center"
       ],
       accueilnom: [
         "bg-buttoncompte",
         "text-forground",
         "hover:bg-buttoncompte/80",
+        "justify-center"
       ],
       submit: [
         "bg-buttoncompte2",
         "text-forground",
         "hover:bg-buttoncompte2/80",
+        "justify-center"
       ],
     },
     size: {

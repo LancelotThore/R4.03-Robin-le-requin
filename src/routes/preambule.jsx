@@ -11,14 +11,14 @@ export default function Preambule() {
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-5">
                 <Link to="/accueil"><Compte className="absolute right-0 top-0 m-5 w-16" /></Link>
-                <Robin/>
-                <Perso/>
+                <Robin />
+                <Perso />
             </div>
             <div className="flex items-center flex-col mt-5 mb-5 gap-5">
-                <Type2 text="Mon calendrier de suivi" Icon={Calendar}/>
-                <Type2 text="Mon Chronomètre" Icon={Chrono}/>
-                <Type2 text="Prendre soin de mes dents" Icon={Sante}/>
-                <Type2 text="Le quizz des dents" Icon={DentsRemplie}/>
+                <Type2 text="Mon calendrier de suivi" extraClasses="w-72" Icon={Calendar}/>
+                <Link to="/chrono"><Type2 text="Mon Chronomètre" extraClasses="w-72" Icon={Chrono}/></Link>
+                <Link to="/info"><Type2 text="Prendre soin de mes dents" extraClasses="w-72" Icon={Sante}/></Link>
+                <Link to="/quizz"><Type2 text="Le quizz des dents" extraClasses="w-72" Icon={DentsRemplie}/></Link>
             </div>
         </>
     )

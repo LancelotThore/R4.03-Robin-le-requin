@@ -20,6 +20,10 @@ export default {
         buttontrue: "hsl(var(--button-true)/<alpha-value>)",
 
       },
+      fontFamily: {
+        Fredoka: ["Fredoka", "sans-serif"],
+        Gochi: ["Gochi Hand", "cursive"]
+      },
     },
   },
   plugins: [],

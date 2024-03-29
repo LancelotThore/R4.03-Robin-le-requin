@@ -1,16 +1,20 @@
-import Robin from '../../components/Robin';
-import { Compte, Retour } from '../../components/Icons';
-import { Perso } from '../../components/Perso';
-import Button from '../../components/Button';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Compte, Retour } from "../../components/Icons";
+import Button from '../../components/Button';
+import Robin from '../../components/Robin';
+import { Perso } from '../../components/Perso';
 
 export default function Quizz() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);
     const [answerSelected, setAnswerSelected] = useState(false);
+    const [score, setScore] = useState(() => Number(sessionStorage.getItem('score')) || 0);
+
+    useEffect(() => {
+        sessionStorage.setItem('score', score);
+    }, [score]);
 
     const answers = [
         { text: 'Les dents définitives', isCorrect: false },
@@ -30,6 +34,7 @@ export default function Quizz() {
                 correct.intent = 'true';
             } else {
                 setCorrectAnswer(null);
+                setScore(score + 1);
             }
         }
     };

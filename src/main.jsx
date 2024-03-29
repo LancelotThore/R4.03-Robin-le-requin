@@ -17,6 +17,7 @@ import Quizz2 from './routes/quizz/quizz2.jsx';
 import Aliments from './routes/aliments.jsx';
 import Recette from './routes/recette.jsx';
 import Chrono from './routes/chrono.jsx';
+import Resultat from './routes/quizz/resultat.jsx';
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: "/~thore2/robin-le-requin/chrono",
     element: <Chrono />
+  },
+  {
+    path: "/~thore2/robin-le-requin/resultat",
+    element: <Resultat />
   },
 ]);
 

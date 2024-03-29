@@ -1,5 +1,3 @@
-
-
 function Requin3ans(props) {
     return (
         <svg
@@ -697,5 +695,52 @@ function MTDents(props) {
     );
 }
 
+function Stop(props) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="none"
+            viewBox="0 0 16 16"
+            {...props}
+        >
+            <path
+                fill="#096EBB"
+                d="M.25.25h5.167v15.5H.25V.25zM15.75 15.75h-5.167V.25h5.167v15.5z"
+            ></path>
+        </svg>
+    );
+}
 
-export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, MTDents }
+function Play(props) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="none"
+            viewBox="0 0 17 17"
+            {...props}
+        >
+            <path fill="#096EBB" d="M16.125.875H.875v15.25h15.25V.875z"></path>
+        </svg>
+    );
+}
+
+function Play2(props) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="26"
+            fill="none"
+            viewBox="0 0 18 26"
+            {...props}
+        >
+            <path fill="#096EBB" d="M17.272 13L.363 25.203V.797L17.273 13z"></path>
+        </svg>
+    );
+}
+
+export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, MTDents, Stop, Play, Play2 }

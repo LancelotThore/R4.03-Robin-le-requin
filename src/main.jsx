@@ -12,6 +12,11 @@ import Caries from './routes/caries.jsx';
 import Preambule from './routes/preambule.jsx';
 import Dents from './routes/dents.jsx';
 import Info from './routes/info.jsx';
+import Quizz from './routes/quizz/quizz.jsx';
+import Quizz2 from './routes/quizz/quizz2.jsx';
+import Aliments from './routes/aliments.jsx';
+import Recette from './routes/recette.jsx';
+import Chrono from './routes/chrono.jsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +47,26 @@ const router = createBrowserRouter([
   {
     path: "/info",
     element: <Info />
+  },
+  {
+    path: "/quizz",
+    element: <Quizz />
+  },
+  {
+    path: "/quizz2",
+    element: <Quizz2 />
+  },
+  {
+    path: "/aliments",
+    element: <Aliments />
+  },
+  {
+    path: "/recette",
+    element: <Recette />
+  },
+  {
+    path: "/chrono",
+    element: <Chrono />
   },
 ]);
 

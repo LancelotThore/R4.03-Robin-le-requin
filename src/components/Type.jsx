@@ -9,9 +9,9 @@ function Type({ text, Icon }) {
     )
 }
 
-function Type2({ text, Icon }) {
+function Type2({ text, Icon, extraClasses = "" }) {
     return (
-        <div className="pl-3 rounded-3xl bg-forground w-72 h-16 flex flex-row items-center drop-shadow-md gap-3">
+        <div className={`px-3 rounded-3xl bg-forground h-16 flex flex-row items-center drop-shadow-md gap-3 ${extraClasses}`}>
             <div className="flex rounded-full items-center justify-center w-10 h-10 bg-background">
                 <Icon/>
             </div>

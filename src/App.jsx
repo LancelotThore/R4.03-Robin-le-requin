@@ -14,7 +14,7 @@ import ChronoPage from "./ui/Chrono/Chrono";
 function App() {
 
   return (
-    <ChronoPage/>
+    <Aliments/>
   )
 }
 

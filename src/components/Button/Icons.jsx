@@ -698,6 +698,21 @@ function Play(props) {
   );
 }
 
+function Play2(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="26"
+      fill="none"
+      viewBox="0 0 18 26"
+      {...props}
+    >
+      <path fill="#096EBB" d="M17.272 13L.363 25.203V.797L17.273 13z"></path>
+    </svg>
+  );
+}
 
 
-export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, Stop, Play  }
+
+export { Requin3ans, Dent, Candy, Couverts, Calendar, Chrono, Sante, DentsRemplie, Soda, Bonbon, PateTartine, Gateau, Cereale, Chips, Biscuit, Compte, Requin6ans, Requin9ans, Retour, Stop, Play, Play2  }

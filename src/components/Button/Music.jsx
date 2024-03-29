@@ -1,34 +1,10 @@
 import React, { useRef } from 'react';
-import { Play, Stop } from './Icons';
+import { Play, Stop, Play2 } from './Icons';
 
-function MusicPlayer() {
-  const audioRef = useRef(); // Crée une référence pour l'élément audio
-
-  const playMusic = () => {
-    audioRef.current.play(); // Joue la musique
-  };
-
-  const pauseMusic = () => {
-    audioRef.current.pause(); // Met la musique en pause
-  };
-
+function BtnPlay({ onClick, isPlaying }) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <audio ref={audioRef} src="chemin_vers_votre_fichier_musique.mp3" />
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2" onClick={playMusic}>
-        Jouer
-      </button>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2" onClick={pauseMusic}>
-        Pause
-      </button>
-    </div>
-  )
-}
-
-function BtnPlay({ onClick }) {
-  return (
-    <div className="rounded-full p-3 border-solid border-4 border-texttitle" onClick={onClick}>
-      <Play/>
+    <div className="flex items-center justify-center  rounded-full p-3 border-solid border-4 border-texttitle" onClick={onClick}>
+      {isPlaying ? <Play2 className="h-4 w-4"/> : <Play className="h-4 w-4"/>}
     </div>
   )
 }
@@ -36,9 +12,9 @@ function BtnPlay({ onClick }) {
 function BtnStop({ onClick }) {
   return (
     <div className="rounded-full p-3 border-solid border-4 border-texttitle" onClick={onClick}>
-      <Stop/>
+      <Stop className="h-4 w-4"/>
     </div>
   )
 }
 
-export {MusicPlayer, BtnPlay, BtnStop};
+export {BtnPlay, BtnStop};

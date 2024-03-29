@@ -44,7 +44,7 @@ export default function Timer() {
                 </CircularProgressbarWithChildren>
             </div >
             <div className="flex justify-center items-center gap-28 mt-5">
-                <BtnPlay onClick={() => setIsRunning(true)} />
+                <BtnPlay onClick={() => setIsRunning(true)} isPlaying={isRunning} />
                 <BtnStop onClick={() => setIsRunning(false)} />
             </div>
             <audio ref={audioRef} src="/audio/MusicTimer.mp3" preload="auto" />

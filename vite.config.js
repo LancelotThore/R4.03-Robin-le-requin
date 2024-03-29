@@ -1,8 +1,7 @@
-// vite.config.js
 export default {
-  // config options
+  // Autres options de configuration
   build: {
     target: 'esnext'
   },
-  base: '~duthil3/robin-le-requin/'
+  base: '/~duthil3/dents'
 }

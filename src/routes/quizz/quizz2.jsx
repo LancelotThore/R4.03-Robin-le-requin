@@ -1,21 +1,26 @@
-import Robin from '../../components/Robin';
-import { Compte, Retour } from '../../components/Icons';
-import { Perso } from '../../components/Perso';
-import Button from '../../components/Button';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Compte, Retour } from "../../components/Icons";
+import Button from '../../components/Button';
+import Robin from '../../components/Robin';
+import { Perso } from '../../components/Perso';
 
-export default function Quizz2() {
+export default function Quizz() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [isCorrect, setIsCorrect] = useState(null);
     const [correctAnswer, setCorrectAnswer] = useState(null);
     const [answerSelected, setAnswerSelected] = useState(false);
+    const [score, setScore] = useState(() => Number(sessionStorage.getItem('score')) || 0);
+
+    useEffect(() => {
+        sessionStorage.setItem('score', score);
+    }, [score]);
 
     const answers = [
-        { text: 'Pour que les dents deviennent plus jaunes.', isCorrect: false },
-        { text: 'Pour rendre les dents plus molles et faciles à casser.', isCorrect: false },
-        { text: 'Pour obtenir des super pouvoirs comme voler!', isCorrect: false },
-        { text: 'Pour garder nos dents et nos gencives en bonne santé.', isCorrect: true },
+        { text: 'Les dents définitives', isCorrect: false },
+        { text: 'Les dents de lait', isCorrect: false },
+        { text: 'Les deux types de dents', isCorrect: true },
+        { text: 'Aucune', isCorrect: false },
     ];
 
     const handleAnswerClick = (answer) => {
@@ -29,10 +34,12 @@ export default function Quizz2() {
                 correct.intent = 'true';
             } else {
                 setCorrectAnswer(null);
+                setScore(score + 1);
             }
         }
     };
 
+    
     return (
         <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
             <Link to="/~thore2/robin-le-requin/preambule"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
@@ -52,6 +59,7 @@ export default function Quizz2() {
                         {answer.text}
                     </Button>
                 ))}
+                <Link to="/~thore2/robin-le-requin/resultat"><Button intent="submit">Voir le résultat</Button></Link>
             </div>
         </div>
     );

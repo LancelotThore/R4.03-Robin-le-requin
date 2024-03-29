@@ -10,7 +10,7 @@ export default function Aliments() {
     return (
         <>
             <div className="bg-background pb-5 flex items-center justify-center flex-col gap-8">
-                <Link to="/info"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
+                <Link to="/~thore2/robin-le-requin/info"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
                 <Robin />
                 <div className="flex flex-col items-center sm:flex-row gap-5">
                     <Perso2 />

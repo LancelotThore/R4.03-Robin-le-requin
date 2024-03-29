@@ -31,13 +31,13 @@ export default function CreationCompte() {
     return (
         <>
             <div className="h-screen bg-background pb-5 flex items-center justify-center flex-col gap-8">
-                <Link to="/accueil"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
+                <Link to="/~thore2/robin-le-requin/accueil"><Retour className="absolute left-0 top-0 mt-7 ml-7" /></Link>
                 <h1 className="text-forground text-center pt-10 text-4xl">Robin Le <br></br> Requin</h1>
                 <Perso />
                 <Input type="text" placeholder="Prénom" value={prenom} onChange={(e) => setPrenom(e.target.value)} />
                 <Input type="date" props={{max: maxDate, min: minDate}} value={birthDate} onChange={(e) => setBirthDate(e.target.value)} />
                 <Input type="email" placeholder="Adresse mail" value={email} onChange={(e) => setEmail(e.target.value)} />
-                <Link to="/accueil" disabled={!prenom || !birthDate || !email}><Button intent="accueilnom" onClick={handleAddUser} disabled={!prenom || !birthDate || !email}>Ajouter</Button></Link>
+                <Link to="/~thore2/robin-le-requin/accueil" disabled={!prenom || !birthDate || !email}><Button intent="accueilnom" onClick={handleAddUser} disabled={!prenom || !birthDate || !email}>Ajouter</Button></Link>
             </div>
         </>
     )

@@ -35,7 +35,8 @@ const button = cva(base, {
         "text-forground",
         "hover:bg-buttoncompte2/80",
         "justify-center",
-        "w-60"
+        "w-4/5",
+        "max-w-98"
       ],
     },
     size: {

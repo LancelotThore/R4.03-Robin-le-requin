@@ -55,7 +55,6 @@ export default function Quizz() {
                 ))}
                 <Link to="/quizz2"><Button intent="submit">Question suivante</Button></Link>
             </div>
-            {correctAnswer && <p>La bonne réponse était : {correctAnswer}</p>}
         </div>
     );
 }

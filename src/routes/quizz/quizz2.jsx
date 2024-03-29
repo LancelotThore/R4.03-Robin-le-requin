@@ -53,7 +53,6 @@ export default function Quizz2() {
                     </Button>
                 ))}
             </div>
-            {correctAnswer && <p>La bonne réponse était : {correctAnswer}</p>}
         </div>
     );
 }

@@ -27,13 +27,15 @@ const button = cva(base, {
         "bg-buttoncompte",
         "text-forground",
         "hover:bg-buttoncompte/80",
-        "justify-center"
+        "justify-center",
+        "w-60"
       ],
       submit: [
         "bg-buttoncompte2",
         "text-forground",
         "hover:bg-buttoncompte2/80",
-        "justify-center"
+        "justify-center",
+        "w-60"
       ],
     },
     size: {

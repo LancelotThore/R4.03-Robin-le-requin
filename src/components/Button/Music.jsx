@@ -25,17 +25,17 @@ function MusicPlayer() {
   )
 }
 
-function BtnPlay() {
+function BtnPlay({ onClick }) {
   return (
-    <div className="rounded-full p-3 border-solid border-4 border-texttitle">
+    <div className="rounded-full p-3 border-solid border-4 border-texttitle" onClick={onClick}>
       <Play/>
     </div>
   )
 }
 
-function BtnStop() {
+function BtnStop({ onClick }) {
   return (
-    <div className="rounded-full p-3 border-solid border-4 border-texttitle">
+    <div className="rounded-full p-3 border-solid border-4 border-texttitle" onClick={onClick}>
       <Stop/>
     </div>
   )

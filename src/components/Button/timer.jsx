@@ -2,16 +2,23 @@ import React from 'react';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { BtnPlay, BtnStop } from './Music';
-import { useState, useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Timer() {
     const [seconds, setSeconds] = useState(120);
-    const [isRunning, setIsRunning] = useState(true);
+    const [isRunning, setIsRunning] = useState(false);
+    const audioRef = useRef(null);
 
     useEffect(() => {
         if (isRunning && seconds > 0) {
             const timerId = setTimeout(() => setSeconds(seconds - 1), 1000);
-            return () => clearTimeout(timerId); // This will clear Timeout
+            audioRef.current.play();
+            return () => {
+                clearTimeout(timerId);
+                if (audioRef.current) {
+                    audioRef.current.pause();
+                }
+            };
         }
     }, [seconds, isRunning]);
 
@@ -37,9 +44,10 @@ export default function Timer() {
                 </CircularProgressbarWithChildren>
             </div >
             <div className="flex justify-center items-center gap-28 mt-5">
-                <BtnPlay onClick={() => setIsRunning(true)}/>
-                <BtnStop onClick={() => setIsRunning(false)}/>
+                <BtnPlay onClick={() => setIsRunning(true)} />
+                <BtnStop onClick={() => setIsRunning(false)} />
             </div>
+            <audio ref={audioRef} src="/audio/MusicTimer.mp3" preload="auto" />
         </>
     );
 }

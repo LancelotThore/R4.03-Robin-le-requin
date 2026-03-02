@@ -1,6 +1,6 @@
 ### Description
 
-Projet étudiant en 2ème année de BUT MMI. Projet réalisé en Binôme.
+Projet étudiant en 2ème année de BUT MMI. Projet réalisé en binôme.
 Développement d'une application pour enfant sur le brossage des dents à partir d'une maquette fournie sur Figma.
 L'application est uniquement du front-end avec React.
 

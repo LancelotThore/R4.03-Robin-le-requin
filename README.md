@@ -70,7 +70,7 @@ Les données (profils, progression, etc.) sont **stockées uniquement dans le ca
 # 🚀 Lancer le projet
 
 ```bash
-git clone https://github.com/LancelotThore/R4.03-Robin-le-requin.git
+git clone https://github.com/LancelotThore/Robin-le-requin.git
 ```
 
 ```bash
